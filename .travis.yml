@@ -1,0 +1,24 @@
+language: "python"
+
+python:
+  - "3.5"
+  - "3.6"
+
+install:
+  - pip install --upgrade pip
+  - pip install -e .[PIL]
+  - pip install coveralls
+
+bundler_args: --retry 3
+
+env:
+  - TRAVIS=1
+
+script:
+  - coverage run --source minecart -m unittest discover tests
+
+after_success:
+  - coveralls
+
+after_failure:
+  - coveralls
