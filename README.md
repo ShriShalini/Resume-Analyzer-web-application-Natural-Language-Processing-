@@ -1,8 +1,10 @@
 ## Resume-Analyzer-web-application
-Full Fledged resume application that can read .docx, .pdf formats
-<h2>Steps:</h2>
+Full Fledged resume application that can read .docx, .pdf formats to extract name, phone number, email address, LinkedIn URL, images, tables from a resumé.
+
+<h2>Steps to run the application:</h2>
 <ol>
   <li>Create a conda virtual environment using the command “conda create –n name_of_env “</li>
+  <li>Install packages detailed in the help document named "Help Document.pdf"</li>
   <li>Copy the source code into a folder</li>
   <li>Change directory (cd) till the first Resume_Reader_Project folder</li>
   <li>Run python manage.py runserver</li>
